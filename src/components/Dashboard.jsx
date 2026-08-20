@@ -55,7 +55,6 @@ function Dashboard() {
     try {
       const response = await fetchLiningDataFromGoogleSheet();
       setGoogleSheetData(response);
-      console.log('response', response);
     } catch (error) {
       console.error('Failed to fetch googlesheet data error :: ', error);
     } finally {

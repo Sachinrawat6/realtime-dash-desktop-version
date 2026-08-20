@@ -82,7 +82,7 @@ function TailorCuttingStats({ groupedData, employeeScans, recentUpdates, product
     const cuttingArray = [];
 
     Object.entries(groupedData).forEach(([location, employees]) => {
-      const loc = location.toLowerCase();
+      const loc = location.toLowerCase()?.split(' / ')[0];
 
       Object.entries(employees).forEach(([employee, info]) => {
         const employeeData = {
@@ -96,7 +96,7 @@ function TailorCuttingStats({ groupedData, employeeScans, recentUpdates, product
           liningCount: info.liningCount,
           totalOrders: info.totalOrders,
         };
-        console.log('entry', employees);
+        // console.log('entry', employees);
         const isTailor =
           loc.includes('tailor scan 2') ||
           loc.includes('cutting master') ||
@@ -179,9 +179,9 @@ function TailorCuttingStats({ groupedData, employeeScans, recentUpdates, product
           location.includes('tailor scan 2') ||
           location.includes('cutting master') ||
           location.includes('master') ||
-          location.includes('kharcha');
-        // for testing
-        // location.includes('admin');
+          location.includes('kharcha') ||
+          // for testing
+          location.includes('admin');
 
         const isCuttingUpdate = location.includes('cutting') || location.includes('master');
 
