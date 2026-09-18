@@ -122,8 +122,7 @@ const ProductPage = ({ data }) => {
     'idrees miyan':
       'https://res.cloudinary.com/dlqbbwdc5/image/upload/v1770361766/idrish_k0i3zd.jpg',
     pooja: 'https://res.cloudinary.com/dlqbbwdc5/image/upload/v1770288947/pooja_b17nmm.webp',
-    'manish kumar':
-      'https://res.cloudinary.com/dlqbbwdc5/image/upload/v1789721253/manish_kumar_watrsb.jpg',
+    'manish kumar': 'https://res.cloudinary.com/dlqbbwdc5/image/upload/v1789721584/mk_i0lg3m.png',
     'raju pressman':
       'https://res.cloudinary.com/dlqbbwdc5/image/upload/v1770288948/raju_yww9tv.webp',
   };
